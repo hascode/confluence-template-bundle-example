@@ -1,0 +1,15 @@
+<atlassian-plugin key="${project.groupId}.${project.artifactId}"
+	name="${project.name}" plugins-version="2">
+	<plugin-info>
+		<description>${project.description}</description>
+		<version>${project.version}</version>
+		<vendor name="${project.organization.name}" url="${project.organization.url}" />
+	</plugin-info>
+
+	<component name="Templates: Default Package" key="templates"
+		public="true"
+		class="com.hascode.confluence.plugin.template.MyTemplatePackage">
+		<interface>com.atlassian.confluence.plugin.templates.export.TemplatePackage
+		</interface>
+	</component>
+</atlassian-plugin>
